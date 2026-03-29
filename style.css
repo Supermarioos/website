@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2e7d32;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.option-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.option-buttons button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 3px solid #4caf50;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    width: 160px; /* Lebih lebar lagi */
+    transition: all 0.2s;
+}
+
+.option-buttons button:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.option-buttons button.active {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
+    box-shadow: 0 0 8px rgba(27, 94, 32, 0.7);
+    font-weight: bold;
+}
+
+.btn-danger {
+    background-color: #e53935;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn-success {
+    background-color: #f90202;
+    margin-top: 15px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.hidden {
+    display: none;
+}
+
+.add-menu-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#newJuiceInput {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.small-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #4caf50;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#newJuiceInput input {
+    padding: 8px;
+    width: 140px;
+}
+
+#newJuiceInput button {
+    padding: 8px 10px;
+    border: 1px solid #4caf50;
+    background: #4caf50;
+    color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mam's Er Fresh Juice - Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mam's Er Fresh Juice</h1>
+
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" id="inputNama" placeholder="Masukkan nama Anda">
+            
+            <label>Juice</label>
+            <div class="option-buttons" id="juiceButtons">
+                <button type="button" data-value="Es Jeruk">Es Jeruk</button>
+                <button type="button" data-value="Tomat">Tomat</button>
+                <button type="button" data-value="Nanas">Nanas</button>
+                <button type="button" data-value="Sirsak">Sirsak</button>
+                <button type="button" data-value="Apel">Apel</button>
+                <button type="button" data-value="Semangka">Semangka</button>
+                <button type="button" data-value="Stroberi">Stroberi</button>
+                <button type="button" data-value="Jambu">Jambu</button>
+                <button type="button" data-value="Melon">Melon</button>
+                <button type="button" data-value="Mangga">Mangga</button>
+                <button type="button" data-value="Buah Naga">Buah Naga</button>
+                <button type="button" data-value="Alpukat">Alpukat</button>
+                <button type="button" data-value="Mix">Mix</button>
+            </div>
+            <div class="add-menu-container">
+                <button type="button" id="btnAddJuiceMenu" class="small-btn">+</button>
+                <div id="newJuiceInput" class="hidden">
+                    <input type="text" id="inputNewJuice" placeholder="Nama juice baru">
+                    <button type="button" id="btnSaveNewJuice">Simpan</button>
+                    <button type="button" id="btnDeleteSelectedJuice">Hapus</button>
+                </div>
+            </div>
+
+            <label>Sugar Level</label>
+            <div class="option-buttons" id="sugarButtons">
+                <button type="button" data-value="Normal">Normal</button>
+                <button type="button" data-value="Less Sugar">Less Sugar</button>
+                <button type="button" data-value="No Sugar">No Sugar</button>
+            </div>
+
+            <label>Milk Level</label>
+            <div class="option-buttons" id="milkButtons">
+                <button type="button" data-value="Normal">Normal</button>
+                <button type="button" data-value="Less Milk">Less Milk</button>
+                <button type="button" data-value="No Milk">No Milk</button>
+            </div>
+
+            <label>Ice Level</label>
+            <div class="option-buttons" id="iceButtons">
+                <button type="button" data-value="Normal">Normal</button>
+                <button type="button" data-value="Less Ice">Less Ice</button>
+                <button type="button" data-value="No Ice">No Ice</button>
+            </div>
+
+            <button id="btnTambah">Tambah Orderan</button>
+        </div>
+
+        <hr>
+
+        <h2>Order List</h2>
+        <table border="1" id="tabelOrder">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Juice</th>
+                    <th>Sugar</th>
+                    <th>Milk</th>
+                    <th>Ice</th>
+                </tr>
+            </thead>
+            <tbody id="isiTabel">
+                </tbody>
+        </table>
+
+        <button id="btnSelesai" class="btn-success">Hapus Semua Orderan</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
